@@ -26,6 +26,7 @@ class Login extends DBAction
             throw new HttpBadRequestException($this->request, "Could not resolve argument {$password}");
         }
         try {
+            $this->connection->getConnection();
             $statement = $this->connection->getConnection()->prepare("SELECT * FROM [dbo].[DBD5_Spieler] WHERE Username = :username AND Passwort = :password");
             $statement->bindValue(':username', $username, PDO::PARAM_STR);
             $statement->bindValue(':password', $password, PDO::PARAM_STR);
