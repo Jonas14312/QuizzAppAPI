@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit62d60de4b802ec31b840b9197e947981
+class ComposerStaticInit04cd28372194c4e5bc1e141ca6ec21df
 {
     public static $files = array (
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
@@ -32,6 +32,7 @@ class ComposerStaticInit62d60de4b802ec31b840b9197e947981
         'S' => 
         array (
             'Symfony\\Polyfill\\Php80\\' => 23,
+            'Symfony\\Component\\Dotenv\\' => 25,
             'Slim\\Psr7\\' => 10,
             'Slim\\' => 5,
         ),
@@ -58,6 +59,7 @@ class ComposerStaticInit62d60de4b802ec31b840b9197e947981
         ),
         'J' => 
         array (
+            'JsonSchema\\' => 11,
             'JanGregor\\Prophecy\\' => 19,
         ),
         'I' => 
@@ -101,6 +103,10 @@ class ComposerStaticInit62d60de4b802ec31b840b9197e947981
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-php80',
         ),
+        'Symfony\\Component\\Dotenv\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/dotenv',
+        ),
         'Slim\\Psr7\\' => 
         array (
             0 => __DIR__ . '/..' . '/slim/psr7/src',
@@ -115,8 +121,8 @@ class ComposerStaticInit62d60de4b802ec31b840b9197e947981
         ),
         'Psr\\Http\\Server\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-server-middleware/src',
-            1 => __DIR__ . '/..' . '/psr/http-server-handler/src',
+            0 => __DIR__ . '/..' . '/psr/http-server-handler/src',
+            1 => __DIR__ . '/..' . '/psr/http-server-middleware/src',
         ),
         'Psr\\Http\\Message\\' => 
         array (
@@ -158,6 +164,10 @@ class ComposerStaticInit62d60de4b802ec31b840b9197e947981
         'Laravel\\SerializableClosure\\' => 
         array (
             0 => __DIR__ . '/..' . '/laravel/serializable-closure/src',
+        ),
+        'JsonSchema\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/justinrainbow/json-schema/src/JsonSchema',
         ),
         'JanGregor\\Prophecy\\' => 
         array (
@@ -837,9 +847,9 @@ class ComposerStaticInit62d60de4b802ec31b840b9197e947981
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit62d60de4b802ec31b840b9197e947981::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit62d60de4b802ec31b840b9197e947981::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit62d60de4b802ec31b840b9197e947981::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit04cd28372194c4e5bc1e141ca6ec21df::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit04cd28372194c4e5bc1e141ca6ec21df::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit04cd28372194c4e5bc1e141ca6ec21df::$classMap;
 
         }, null, ClassLoader::class);
     }

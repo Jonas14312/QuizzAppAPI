@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'slim/slim-skeleton',
-        'pretty_version' => '4.5.0',
-        'version' => '4.5.0.0',
-        'reference' => NULL,
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => '38850614e09d045edd91df94e1712988aef57539',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -45,6 +45,15 @@
             'install_path' => __DIR__ . '/../jangregor/phpstan-prophecy',
             'aliases' => array(),
             'dev_requirement' => true,
+        ),
+        'justinrainbow/json-schema' => array(
+            'pretty_version' => 'v5.2.13',
+            'version' => '5.2.13.0',
+            'reference' => 'fbbe7e5d79f618997bc3332a6f49246036c45793',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../justinrainbow/json-schema',
+            'aliases' => array(),
+            'dev_requirement' => false,
         ),
         'laravel/serializable-closure' => array(
             'pretty_version' => 'v1.3.3',
@@ -512,9 +521,9 @@
             'dev_requirement' => false,
         ),
         'slim/slim-skeleton' => array(
-            'pretty_version' => '4.5.0',
-            'version' => '4.5.0.0',
-            'reference' => NULL,
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => '38850614e09d045edd91df94e1712988aef57539',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -528,6 +537,15 @@
             'install_path' => __DIR__ . '/../squizlabs/php_codesniffer',
             'aliases' => array(),
             'dev_requirement' => true,
+        ),
+        'symfony/dotenv' => array(
+            'pretty_version' => 'v7.0.2',
+            'version' => '7.0.2.0',
+            'reference' => '1e3e123fd1887fb2097ad38205a9a866a52d4dcc',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../symfony/dotenv',
+            'aliases' => array(),
+            'dev_requirement' => false,
         ),
         'symfony/polyfill-php80' => array(
             'pretty_version' => 'v1.28.0',

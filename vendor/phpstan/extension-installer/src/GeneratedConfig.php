@@ -12,7 +12,7 @@ final class GeneratedConfig
 	public const EXTENSIONS = array (
   'jangregor/phpstan-prophecy' => 
   array (
-    'install_path' => 'C:\\Quizz\\QuizzAppAPI\\vendor/jangregor/phpstan-prophecy',
+    'install_path' => 'C:\\Users\\admin\\Desktop\\bib krämpfe zum mitnehmen\\git\\azureprojektmitquiz\\ExistanialQuiz\\vendor/jangregor/phpstan-prophecy',
     'relative_install_path' => '../../../jangregor/phpstan-prophecy',
     'extra' => 
     array (
