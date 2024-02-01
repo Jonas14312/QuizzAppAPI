@@ -8,6 +8,7 @@ use Psr\Http\Message\ResponseInterface as Response;
 use Psr\Http\Message\ServerRequestInterface as Request;
 use Slim\App;
 use App\Application\Actions\User\Register;
+use App\Application\Actions\User\Login;
 use Slim\Interfaces\RouteCollectorProxyInterface as Group;
 
 return function (App $app) {
@@ -25,5 +26,6 @@ return function (App $app) {
     $app->group('/user', function (Group $group) {
         $group->get('/register', Register::class);
         $group->post('/Login', Login::class);
+        
     });
 };
