@@ -2,8 +2,6 @@
 
 declare(strict_types=1);
 
-use App\Application\Actions\User\ListUsersAction;
-use App\Application\Actions\User\ViewUserAction;
 use Psr\Http\Message\ResponseInterface as Response;
 use Psr\Http\Message\ServerRequestInterface as Request;
 use Slim\App;
@@ -25,7 +23,6 @@ return function (App $app) {
 
     $app->group('/user', function (Group $group) {
         $group->get('/register', Register::class);
-        $group->post('/Login', Login::class);
-        
+        $group->post('/login', Login::class);
     });
 };
