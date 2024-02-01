@@ -24,5 +24,6 @@ return function (App $app) {
 
     $app->group('/user', function (Group $group) {
         $group->get('/register', Register::class);
+        $group->get('/Login', Login::class);
     });
 };
