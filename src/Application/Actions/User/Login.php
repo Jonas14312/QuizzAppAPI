@@ -16,7 +16,7 @@ class Login extends DBAction {
         $password = $body['Passwort'];
 
         if (!$username) {
-            throw new HttpBadRequestException($this->request, "Username konnte nicht vom Body gelesen werden {$username}");
+            throw new HttpBadRequestException($this->request, "Der Username konnte nicht vom Body gelesen werden {$username}");
         }
         if (!$password) {
             throw new HttpBadRequestException($this->request, "Could not resolve argument {$password}");
