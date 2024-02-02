@@ -5,30 +5,26 @@ namespace App\Application\Database;
 use PDO;
 use PDOException;
 
-class DBConnection {
+class DBConnection
+{
 
 
-    private $connection;
+    private $conn;
 
-    public function __construct() {
+    public function __construct()
+    {
         try {
-            $conn = new PDO("sqlsrv:server = tcp:jonasmluishtobiass.database.windows.net,1433; Database = DatabaseQuizzApp", "Jonas", "76cLAnzYLX4");
-            $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        }
-        catch (PDOException $e) {
+            $this->conn = new PDO("sqlsrv:server = tcp:jonasmluishtobiass.database.windows.net,1433; Database = DatabaseQuizzApp", "Jonas", "76cLAnzYLX4");
+            $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            $this->conn->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+        } catch (PDOException $e) {
             print("Error connecting to SQL Server.");
             die(print_r($e));
         }
     }
 
-    public function getConnection() {
-        return $this->connection;
+    public function getConnection()
+    {
+        return $this->conn;
     }
-
 }
-
-
-
-
-
-?>
